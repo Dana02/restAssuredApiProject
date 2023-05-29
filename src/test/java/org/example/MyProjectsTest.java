@@ -37,8 +37,8 @@ public class MyProjectsTest extends BaseTest {
         header.clickOnLogInButton();
         loginPage.clickOnLoginButton();
         loginPage.switchToNewTab();
-        vistaLoginPage.setEmail("loxir35724@gpipes.com");
-        vistaLoginPage.setPassword("KCf.yA.r4R6g$m!");
+        vistaLoginPage.setEmail("");
+        vistaLoginPage.setPassword("");
         vistaLoginPage.clickOnLoginButton();
         vistaLoginPage.switchToParentTab();
         header.assertUserMenu(Condition.visible);
