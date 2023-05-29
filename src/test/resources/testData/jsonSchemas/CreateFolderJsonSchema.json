@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "removed": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "updatedAt": {
+      "type": "integer"
+    },
+    "folderType": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "name",
+    "removed",
+    "createdAt",
+    "updatedAt",
+    "folderType"
+  ]
+}

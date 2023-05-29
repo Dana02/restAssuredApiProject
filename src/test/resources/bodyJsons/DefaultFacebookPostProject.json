@@ -1,0 +1,373 @@
+{
+  "pageWidth": 940,
+  "pageHeight": 788,
+  "format": "Facebook",
+  "group": "SM",
+  "originalDimensions": {
+    "width": "940",
+    "height": "788",
+    "measureUnits": "px"
+  },
+  "minPageDuration": 0,
+  "pages": [
+    {
+      "animationMode": "elements",
+      "customAnimationDuration": 0,
+      "elements": [
+        {
+          "top": 0,
+          "left": 0,
+          "width": 940,
+          "height": 788,
+          "angle": 0,
+          "uuid": "cOVV1aEQGc6XbULy8z4NfzocZ0Ju7mD5MYt31ztaGcHCPOuzIeITLyzpMh2Gj6eX",
+          "opacity": 1,
+          "isBackground": true,
+          "type": "coloredBackground",
+          "locked": false,
+          "colors": [
+            {
+              "id": 0,
+              "color": "#435E9D",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "top": 81.85602688270058,
+          "left": 38.80803584360069,
+          "width": 862.3839283127986,
+          "height": 646.7879462345988,
+          "angle": 0,
+          "uuid": "c0rSGQfz1s2G895JTyXldk75lB165vSxG3FMuDAVQc0JzbsFXDk9YIu8DefqKeKk",
+          "mediaId": "621ddf1b079dcd936306e65c",
+          "opacity": 1,
+          "flipHorizontal": 1,
+          "flipVertical": 1,
+          "type": "imageElement",
+          "locked": false,
+          "forSubscribers": false,
+          "filters": {
+            "brightness": 0,
+            "contrast": 0,
+            "saturate": 0,
+            "tint": 0,
+            "blur": 0,
+            "crossProcess": 0,
+            "vignette": 0
+          },
+          "filtersIntensityEnabled": false,
+          "filtersPresetIntensity": 50,
+          "originalImageWidth": 862.3839283127987,
+          "originalImageHeight": 646.7879462345991,
+          "cropOpts": {
+            "left": 0,
+            "top": 0,
+            "width": 862.3839283127986,
+            "height": 646.7879462345988
+          }
+        },
+        {
+          "top": 565.2099389704845,
+          "left": 277.5572750605592,
+          "width": 169.46556610029089,
+          "height": 63.97827101308209,
+          "angle": -0.1526199110168888,
+          "uuid": "ZKOpg8u7Pce1mu16zwPVxL6wYwgw3S1p8yIuyjpS5DliVBNqsa5IrVSRWMKscwEd",
+          "opacity": 1,
+          "type": "textElement",
+          "locked": false,
+          "fontSize": 60,
+          "font": "Open Sans",
+          "lineHeight": 1,
+          "wordBreak": "breakWord",
+          "colorMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "color",
+              "value": "313251"
+            }
+          ],
+          "boldMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "bold",
+              "value": false
+            }
+          ],
+          "italicMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "italic",
+              "value": false
+            }
+          ],
+          "lineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "value": "line",
+              "type": "line"
+            }
+          ],
+          "opacityMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "opacity",
+              "value": 1
+            }
+          ],
+          "underlineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "underline",
+              "value": false
+            }
+          ],
+          "linkMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "link",
+              "value": ""
+            }
+          ],
+          "textAlign": "center",
+          "capitalize": false,
+          "underline": false,
+          "letterSpacing": 0,
+          "text": "PRAY",
+          "effects": [
+            {
+              "type": "curved",
+              "enabled": true,
+              "angle": -47,
+              "baseWidth": 2.35302734375
+            }
+          ],
+          "weightMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "weight",
+              "value": 400
+            }
+          ],
+          "styleMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 3,
+              "type": "style",
+              "value": "regular"
+            }
+          ]
+        },
+        {
+          "top": 564.7060352231905,
+          "left": 512.8067925869394,
+          "width": 203.1580635875976,
+          "height": 66.58792955361903,
+          "angle": -0.188066802383194,
+          "uuid": "UNHoFbAHRX3Tc32puEMh5eilrDDYybJgbFbHFXWNYIDKVnNIvEnnkQkRf9tZ5uwc",
+          "opacity": 1,
+          "type": "textElement",
+          "locked": false,
+          "fontSize": 60,
+          "font": "Open Sans",
+          "lineHeight": 1,
+          "wordBreak": "breakWord",
+          "colorMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "color",
+              "value": "313251"
+            }
+          ],
+          "boldMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "bold",
+              "value": false
+            }
+          ],
+          "italicMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "italic",
+              "value": false
+            }
+          ],
+          "lineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "value": "line",
+              "type": "line"
+            }
+          ],
+          "opacityMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "opacity",
+              "value": 1
+            }
+          ],
+          "underlineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "underline",
+              "value": false
+            }
+          ],
+          "linkMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "link",
+              "value": ""
+            }
+          ],
+          "textAlign": "center",
+          "capitalize": false,
+          "underline": false,
+          "letterSpacing": 0,
+          "text": "PEACE",
+          "effects": [
+            {
+              "type": "curved",
+              "enabled": true,
+              "angle": 58,
+              "baseWidth": 2.9580078125
+            }
+          ],
+          "weightMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "weight",
+              "value": 400
+            }
+          ],
+          "styleMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 4,
+              "type": "style",
+              "value": "regular"
+            }
+          ]
+        },
+        {
+          "top": 534,
+          "left": 303.5,
+          "width": 366.99999999999983,
+          "height": 94,
+          "angle": 0,
+          "uuid": "K6MXnig268S5jx7bvlIRcsYC8VDBTxvhrj0gYJsHqURzKOgEHlyFAg9YZOZ3wGzC",
+          "opacity": 1,
+          "type": "textElement",
+          "locked": false,
+          "fontSize": 94,
+          "font": "Mr De Haviland",
+          "lineHeight": 1,
+          "wordBreak": "breakWord",
+          "colorMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "color",
+              "value": "#313251"
+            }
+          ],
+          "boldMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "bold",
+              "value": false
+            }
+          ],
+          "italicMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "italic",
+              "value": false
+            }
+          ],
+          "lineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "value": "line",
+              "type": "line"
+            }
+          ],
+          "opacityMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "opacity",
+              "value": 1
+            }
+          ],
+          "underlineMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "underline",
+              "value": false
+            }
+          ],
+          "linkMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "link",
+              "value": ""
+            }
+          ],
+          "textAlign": "center",
+          "capitalize": false,
+          "underline": false,
+          "letterSpacing": 0,
+          "text": "for",
+          "weightMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "weight",
+              "value": 400
+            }
+          ],
+          "styleMap": [
+            {
+              "startIndex": 0,
+              "endIndex": 2,
+              "type": "style",
+              "value": "regular"
+            }
+          ]
+        }
+      ],
+      "audio": [],
+      "uuid": "t3B2e3pAxrlenJIQjPYPzd54g72DcpWx2Dq46J5XpVjepQejNefGJ7LHqZWDSj8f",
+      "minDuration": 0,
+      "templateId": "621ddf6e079dcd93630b2b90"
+    }
+  ],
+  "v2": true,
+  "name": "Facebook-публікація 940x788  пікс",
+  "projectType": "regular",
+  "audio": []
+}
