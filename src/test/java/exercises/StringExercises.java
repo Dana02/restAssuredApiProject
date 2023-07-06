@@ -1,12 +1,6 @@
 package exercises;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 interface A1 {
@@ -58,7 +52,21 @@ class Test1 {
     }
 }
 
-public class ExercisesJava {
+class a {
+
+    public int method2() {
+        return 10;
+    }
+}
+
+class b extends a {
+
+    public int method1() {
+        return super.method2(); //МИ МОЖЕМО ВЕРТАТИ SUPER i THIS
+    }
+}
+
+public class StringExercises {
     public static void main(String[] args) {
         //Ex-1
         //getCountOfEachCharacter("Welcome Java");
@@ -86,23 +94,6 @@ public class ExercisesJava {
 //                System.out.print(arr[i].substring(0) + " ");
 //            }
 //        }
-
-        //Ex-4
-        //getHowManyStepsTillZero(14);
-
-        //Ex-5
-//        int nums[] = {3, 2, 3, 2, 3};
-//        System.out.println(element(nums));
-
-        //Ex-6
-//        int[] array = {1, 2, 3, -1, -2, 4};
-//        Arrays.sort(array);
-//        System.out.println(Arrays.toString(array));
-
-        //Ex-7 Write Java program that checks if two arrays contain the same elements.
-//        Integer[] array = {1, 2, 3, -1, -2, 4};
-//        Integer[] array2 = {1, 2, 3, -1, -2, 4};
-//        System.out.println(sameElements(array, array2));
 
         //Streams
 //        List<Product> productsList = new ArrayList<Product>();
@@ -149,24 +140,9 @@ public class ExercisesJava {
 //                        .collect(Collectors.toMap(p->p.id, p->p.name));
 //     System.out.println(productPriceMap);
 
-
-        //Ex-8
-//        int[] array = {1, 2, 3, -1, -2, 4};
-//        getSumOfIntegerArray(array); //попробувати самій написати
-
-        //Ex-9
-        //int[] array = {1, 7, 55, 4, -2, 33};
-        // System.out.println(getSecondLargestNumber(array));
-
         //Ex-10
 //        String name = "Welcome Java";
 //        System.out.println(getReverseString(name));
-
-        //Ex-11
-        //swipeTwoNumbers(12, 33);
-
-        //Ex-12
-        //isNumberPrime(9);
 
         //Ex-13
         //findDuplicateCharacterInString("w3schools");
@@ -174,45 +150,8 @@ public class ExercisesJava {
 //        Object obj = new Object();
 //        System.out.println(obj.hashCode());
 
-        //Ex-14
-        //reverseNumber(1234); ???
-
-        //Ex-15
-//        int[] array = {1, 7, 55, 4, 33};
-//        int[] array2 = {1, 7, 55, 9, 33};
-//        System.out.println(checkIfTwoArraysAreEqual(array, array2));
-
-//        String[] s1 = {"java", "swings", "j2ee", "struts", "jsp", "hibernate"};
-//        String[] s2 = {"java", "struts", "j2ee", "hibernate", "swings", "jsp"};
-//        Arrays.sort(s1);
-//        Arrays.sort(s2);
-//        System.out.println(Arrays.equals(s1, s2));
-
-        //Ex-16
-        //getSumOfAllNumber(432454); //щоб видалити останню цифру з числа треба поділити його на 10, а щоб взяти останню потрібно взяти number % 10
-
         //Ex-17
 //        reverseEachWord("Java Concept Of The Day");
-//
-//        int a = 5;
-//        //double a2 = a; //float also works
-//        double a2 = (float) a; //also works
-//        System.out.println(a2); //5.0
-//
-//        int a3 = 5;
-//        float a4 = a3;
-
-        //Ex-18
-//        Integer [] myArray = {1,3,5,7,9};
-//        System.out.println("Original Array:" + Arrays.asList(myArray));
-//        reverseArray(myArray);
-
-        //Ex-19
-//        Integer[] myArray = {1, 3, 5, 7, 9, 2, 1, 3};
-//        removeDuplicatesFromArray(myArray); //recreate
-
-//        char c = 0x000A;
-//        System.out.println(c); //print nothing
 
         //main("think"); //print main2
 
@@ -238,112 +177,17 @@ public class ExercisesJava {
 //        System.out.println(a2.equals(b2)); //true
 //        System.out.println(a2 == b2); //false
 
-//        int[] myArray = {1, 3, 5, 2, 8, 9, 5, 0};
-//        int x = myArray[0];
-//        for (int i = 0; i < myArray.length; i++) {
-//            if (myArray[i] < x) {
-//                x = myArray[i];
-//            }
-//        }
-//        System.out.println(x); //0
-
-//        int num[] = new int[9];
-//        for (int i = 0; i < num.length; i++) {
-//            num[i] = i + 5;
-//        }
-//        System.out.println(num[7]); //12!!!!!
-
-//        int[] arr = new int[9]; //arr [0,0,0,0,0,0,0,0,0]
-//        System.out.println(arr[0]); //0
-
 //        List<String> cоlleсtion = List.of("AA", "BB", "CC"); //immutable!!! java 9
 //        for (String еlement : cоlleсtion) {
 //            if (еlement.equals("AA")) {
 //                cоlleсtion.remove(еlement); //ImmutableCollections exception
 //            }
 //        }
-
-        //JAVA is always pass by value
-        //!!!!!!!!!!!!!!
-        int a = 5;
-        System.out.println("a before " + a); //5
-        change(a);
-        System.out.println("a after " + a); //5
-
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        int[] myArray = {1, 2, 3, 4, 5};
-        changeArr(myArray);
-        System.out.println(Arrays.toString(myArray));// [99, 2, 3, 4, 5]
-
-
-        int num = 10;
-        //boxing
-        Integer refInt = num;
-        //unboxing
-        int num2 = refInt;
-
-        int b = 7;
-        int c = 2;
-        System.out.println(7/2); //b and c are int type. a/b will also be an int type. So the result 3.5 will become 3.
     }
 
-    private static void change(int a) { //in primitive type we get value
-        a++;
-    }
-
-    private static void changeArr(int[] oldArr) {//we get reference by value
-//      int temp = arr[arr.length - 1];
-//      oldArr[0] = temp;
-
-        // oldArr[0] = 99; //will change oldArr[0]
-        int[] newArr = oldArr; // we created new array and = it to OldArr
-        newArr[0] = 99; //and this will change OldArr
-    }
 
     public static void main(String args) {
         System.out.println("main2");
-    }
-
-    private static void removeDuplicatesFromArray(Object[] arrayWithDuplicates) {
-        //1 example
-//        Set<Object> newArray = new HashSet<>(Arrays.asList(myArray));
-//        System.out.println(newArray);
-
-        //Assuming all elements in input array are unique
-
-        int numberOfUniqueElements = arrayWithDuplicates.length;
-
-        for (int i = 0; i < numberOfUniqueElements; i++) {
-            for (int j = i + 1; j < numberOfUniqueElements; j++) {
-                //If any two elements are found equal
-                if (arrayWithDuplicates[i] == arrayWithDuplicates[j]) {
-                    //Replace duplicate element with last unique element
-                    arrayWithDuplicates[j] = arrayWithDuplicates[numberOfUniqueElements - 1];
-                    //Decrementing numberOfUniqueElements
-                    numberOfUniqueElements--;
-                    //Decrementing j
-                    j--;
-                }
-            }
-        }
-
-        //Copying only unique elements of arrayWithDuplicates into arrayWithoutDuplicates
-        Object[] arrayWithoutDuplicates = Arrays.copyOf(arrayWithDuplicates, numberOfUniqueElements);
-
-        for (int i = 0; i < arrayWithoutDuplicates.length; i++) {
-            System.out.print(arrayWithoutDuplicates[i] + "\t");
-        }
-    }
-
-    private static void reverseArray(Integer[] array) {
-        //1 example
-//        for (int i = array.length - 1; i >= 0; i--) {
-//            System.out.print(array[i]);
-//        }
-
-        //2 example
-        Collections.reverse(Arrays.asList(array));
-        System.out.println("Reversed Array:" + Arrays.asList(array));
     }
 
     private static void reverseEachWord(String string) {
@@ -361,46 +205,6 @@ public class ExercisesJava {
         System.out.println(reverseString);
     }
 
-    private static void getSumOfAllNumber(int number) {
-        int sum = 0;
-
-        while (number != 0) {
-            //get last digit of number
-            int lastDigit = number % 10;
-            //add last digit to sum
-            sum = sum + lastDigit;
-            //remove last digit from input number
-            number = number / 10;
-        }
-        System.out.println("Sum Of All Digits In " + number + " = " + sum);
-    }
-
-
-    private static boolean checkIfTwoArraysAreEqual(int[] array, int[] array2) {
-        boolean isEqual = true;
-        if (array.length == array2.length) {
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] != array2[i]) {
-                    isEqual = false;
-                }
-            }
-        }
-        return isEqual;
-    }
-
-    private static void reverseNumber(int number) {
-        int reverse = 0;
-        int remainder = 0;
-        do {
-            remainder = number % 10;
-            reverse = reverse * 10 + remainder;
-            number = number / 10;
-
-        } while (number > 0);
-
-        System.out.println(number);
-    }
-
     private static void findDuplicateCharacterInString(String string) {
         char[] charArray = string.toCharArray();
         System.out.println("The String is " + string);
@@ -416,53 +220,12 @@ public class ExercisesJava {
         }
     }
 
-    private static void isNumberPrime(int number) {
-        if (number % 2 == 0) {
-            System.out.println("false");
-        } else if (number <= 1) {
-            System.out.println("false");
-        } else {
-            System.out.println("true");
-        }
-    }
-
-    private static void swipeTwoNumbers(int firstNumber, int secondNumber) {
-        int thirdNumber = firstNumber; //12
-        firstNumber = secondNumber; //33
-        secondNumber = thirdNumber;//12
-        System.out.println(firstNumber + " " + secondNumber);
-    }
-
     private static String getReverseString(String name) {
         String reverseString = "";
         for (int i = name.length() - 1; i >= 0; i--) {
             reverseString = reverseString + name.charAt(i);
         }
         return reverseString;
-    }
-
-    private static int getSecondLargestNumber(int[] array) {
-        int highest = Integer.MIN_VALUE;
-        int secondHighest = Integer.MIN_VALUE;
-
-        for (int i : array) {
-            if (i > highest) {
-                secondHighest = highest;
-                highest = i;
-            } else if (i > secondHighest) {
-                secondHighest = i;
-            }
-
-        }
-        return secondHighest;
-    }
-
-    private static void getSumOfIntegerArray(int[] array) {
-        int sum = 0;
-        for (Integer arr : array) {
-            sum += arr;
-        }
-        System.out.println(sum);
     }
 
     public static void getCountOfEachCharacter(String givenString) {
@@ -524,52 +287,6 @@ public class ExercisesJava {
         Map<String, Long> resultMap = Arrays.stream(givenString.split("")).map(String::toLowerCase)
                 .collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting()));
         System.out.println(resultMap);
-    }
-
-    private static void getHowManyStepsTillZero(int number) {
-        int step = 0;
-        while (number != 0) {
-            if (number % 2 == 0) {
-                number = number / 2;
-                step = step + 1;
-            } else {
-                number = number - 1;
-                step = step + 1;
-            }
-        }
-        System.out.println(step);
-    }
-
-    private static int element(int nums[]) {
-        int countOfElements = nums.length / 2;
-
-        for (int num : nums) {
-            int count = 0;
-            for (int elem : nums) {
-                if (elem == num) {
-                    count += 1;
-                }
-            }
-            if (count > countOfElements) {
-                return num;
-            }
-        }
-        return -1;
-    }
-
-    private static boolean sameElements(Object[] array1, Object[] array2) {
-        Set<Object> uniqueElements1 = new HashSet<>(Arrays.asList(array1));
-        Set<Object> uniqueElements2 = new HashSet<>(Arrays.asList(array2));
-
-        if (uniqueElements1.size() != uniqueElements2.size()) {
-            return false;
-        }
-        for (Object obj : uniqueElements1) {
-            if (!uniqueElements2.contains(obj)) {
-                return false;
-            }
-        }
-        return true;
     }
 
     public Integer getVal(int i) {
