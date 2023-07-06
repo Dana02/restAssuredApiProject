@@ -1,4 +1,4 @@
-package exercises;
+package exercises.reflection;
 
 public class Cat {
     @ImportantString

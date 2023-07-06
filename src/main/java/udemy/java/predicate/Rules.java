@@ -1,4 +1,4 @@
-package com.udemy.java.predicate;
+package udemy.java.predicate;
 
 import org.openqa.selenium.WebElement;
 

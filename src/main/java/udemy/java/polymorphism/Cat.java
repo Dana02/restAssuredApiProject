@@ -1,4 +1,4 @@
-package com.udemy.java.polymorphism;
+package udemy.java.polymorphism;
 
                   //IS A/AN
 public class Cat extends Animal {

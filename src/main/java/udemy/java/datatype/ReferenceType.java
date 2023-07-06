@@ -1,4 +1,4 @@
-package com.udemy.java.datatype;
+package udemy.java.datatype;
 
 import java.util.Arrays;
 

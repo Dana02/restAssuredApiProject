@@ -1,4 +1,4 @@
-package com.udemy.java.util;
+package udemy.java.util;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

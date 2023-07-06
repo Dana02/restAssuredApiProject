@@ -1,4 +1,4 @@
-package com.udemy.java.assignment;
+package udemy.java.assignment;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

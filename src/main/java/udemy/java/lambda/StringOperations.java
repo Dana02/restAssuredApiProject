@@ -1,4 +1,4 @@
-package com.udemy.java.lambda;
+package udemy.java.lambda;
 
 @FunctionalInterface
 public interface StringOperations {

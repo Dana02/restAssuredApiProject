@@ -1,4 +1,4 @@
-package test;
+package testjava8;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import udemy.java.assignment.PriceTable;

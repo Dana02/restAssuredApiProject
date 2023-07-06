@@ -1,12 +1,11 @@
-package com.udemy.java;
+package udemy.java;
 
 
-import com.udemy.java.lambda.GreetingService;
-import com.udemy.java.lambda.StringOperations;
+import udemy.java.lambda.GreetingService;
+import udemy.java.lambda.StringOperations;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class TestMain {
 

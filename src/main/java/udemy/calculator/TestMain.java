@@ -1,4 +1,4 @@
-package com.udemy.calculator;
+package udemy.calculator;
 
 
 import java.util.function.Consumer;

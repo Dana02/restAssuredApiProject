@@ -1,4 +1,4 @@
-package com.udemy.java.lambda;
+package udemy.java.lambda;
 
 // SAM - single abstract method
 

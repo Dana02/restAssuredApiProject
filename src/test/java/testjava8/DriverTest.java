@@ -1,4 +1,4 @@
-package test;
+package testjava8;
 
 import udemy.java.predicate.Rules;
 import udemy.java.supplier.DriverFactory;

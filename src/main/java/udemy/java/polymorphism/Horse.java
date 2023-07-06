@@ -1,4 +1,4 @@
-package com.udemy.java.polymorphism;
+package udemy.java.polymorphism;
 
 public class Horse extends Animal {
 

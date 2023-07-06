@@ -1,4 +1,4 @@
-package com.udemy.java.assignment;
+package udemy.java.assignment;
 
 import java.io.IOException;
 import java.nio.file.Files;

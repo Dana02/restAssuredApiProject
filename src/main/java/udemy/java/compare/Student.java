@@ -1,4 +1,4 @@
-package com.udemy.java.compare;
+package udemy.java.compare;
 
 import java.util.Arrays;
 import java.util.Comparator;

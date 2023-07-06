@@ -1,4 +1,4 @@
-package com.udemy.java.interfacepolymorphism;
+package udemy.java.interfacepolymorphism;
 
 import java.time.LocalDateTime;
 

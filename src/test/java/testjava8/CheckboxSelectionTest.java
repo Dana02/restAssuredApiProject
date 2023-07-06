@@ -1,11 +1,11 @@
-package test;
+package testjava8;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import udemy.java.pages.TableDemoPage;
-import udemy.java.supplier.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
+import udemy.java.pages.TableDemoPage;
+import udemy.java.supplier.DriverFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

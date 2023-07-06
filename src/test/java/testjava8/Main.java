@@ -1,4 +1,4 @@
-package test;
+package testjava8;
 
 import java.io.IOException;
 import java.nio.file.Files;

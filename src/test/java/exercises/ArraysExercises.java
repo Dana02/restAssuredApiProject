@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.*;
 
-public class ArraysTest {
+public class ArraysExercises {
     public static void main(String[] args) {
 
 //______________SORTNING________________________
@@ -34,7 +34,7 @@ public class ArraysTest {
         Integer[] array12 = {1, 2, 3, -1, -2, 4};
         System.out.println(sameElements(array11, array12));
 
-        //Ex-15
+        //_______________________________________
         int[] array3 = {1, 7, 55, 4, 33};
         int[] array4 = {1, 7, 55, 9, 33};
         System.out.println(checkIfTwoArraysAreEqual(array3, array4));
@@ -52,51 +52,42 @@ public class ArraysTest {
         compareIndexesOfTwoArrays(a, b);
 
         //find max difference between any adjacent(суміжні) index in array
-        int arr[] = {1, 4, 8, 15, 17};
-        System.out.println(findMamDiffBetweenAdjacentIndexes(arr));
+        int arr1[] = {1, 4, 8, 15, 17};
+        System.out.println(findMamDiffBetweenAdjacentIndexes(arr1));
 
-        //Ex-19
+        //_______________________________________
         Integer[] myArray = {1, 3, 5, 7, 9, 2, 1, 3};
         removeDuplicatesFromArray(myArray); //recreate
 
-        //Ex-18
+        //_______________________________________
         Integer[] myArray5 = {1, 3, 5, 7, 9};
         System.out.println("Original Array:" + Arrays.asList(myArray5));
         reverseArray(myArray5);
 
-
-        //Ex-8
+        //_______________________________________
         int[] array6 = {1, 2, 3, -1, -2, 4};
         getSumOfIntegerArray(array6); //попробувати самій написати
 
-        //Ex-9
+        //_______________________________________
         int[] array7 = {1, 7, 55, 4, -2, 33};
         System.out.println(getSecondLargestNumber(array7));
-
-        //JAVA is always pass by value
-        //!!!!!!!!!!!!!!
-        int a1 = 5;
-        System.out.println("a before " + a1); //5
-        change(a1);
-        System.out.println("a after " + a1); //5
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         int[] myArray4 = {1, 2, 3, 4, 5};
         changeArr(myArray4);
         System.out.println(Arrays.toString(myArray4));// [99, 2, 3, 4, 5]
 
-
         int[] arr6 = new int[9]; //arr [0,0,0,0,0,0,0,0,0]
         System.out.println(arr6[0]); //0
 
-
+        //_______________________________________
         int num[] = new int[9];
         for (int i = 0; i < num.length; i++) {
             num[i] = i + 5;
         }
         System.out.println(num[7]); //12!!!!!
 
-
+        //_______________________________________
         int[] myArray7 = {1, 3, 5, 2, 8, 9, 5, 0};
         int x = myArray7[0];
         for (int i = 0; i < myArray7.length; i++) {
@@ -105,6 +96,59 @@ public class ArraysTest {
             }
         }
         System.out.println(x); //0
+
+        //_______________________________________
+        int multiArr[][] = {{2, 4, 5}, {3, 4, 7}, {1, 2, 9}};
+        printMaxAmdMinNumberInMultiDimArr(multiArr);
+
+        //_______________________________________
+        howManyTimesNumberRepeated();
+
+    }
+
+    private static void howManyTimesNumberRepeated() {
+        int[] arr = {4, 5, 5, 5, 4, 6, 6, 9, 4};
+        //4-3, 5-3, 6-2, 9-1
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            int counter = 0;
+            if (!list.contains(arr[i])) {
+                list.add(arr[i]);
+                counter++;
+
+                for (int j = i + 1; j < arr.length; j++) {
+                    if (arr[i] == arr[j]) {
+                        counter++;
+                    }
+                }
+                System.out.println(arr[i] + " - " + counter);
+            }
+        }
+        System.out.println("//_______________________________________");
+    }
+
+    private static void printMaxAmdMinNumberInMultiDimArr(int[][] multiArr) {
+        int minNum = multiArr[0][0];
+
+        for (int i = 0; i < multiArr.length; i++) {
+            for (int j = 0; j < multiArr.length; j++) {
+                if (multiArr[i][j] < minNum) {
+                    minNum = multiArr[i][j];
+                }
+            }
+        }
+        System.out.println("Smallest number is " + minNum);
+
+        int maxNum = multiArr[0][0];
+        for (int i = 0; i < multiArr.length; i++) {
+            for (int j = 0; j < multiArr.length; j++) {
+                if (multiArr[i][j] > maxNum) {
+                    maxNum = multiArr[i][j];
+                }
+            }
+        }
+        System.out.println("Largest number is " + maxNum);
     }
 
 
@@ -264,10 +308,6 @@ public class ArraysTest {
             sum += arr;
         }
         System.out.println(sum);
-    }
-
-    private static void change(int a) { //in primitive type we get value
-        a++;
     }
 
     private static void changeArr(int[] oldArr) {//we get reference by value

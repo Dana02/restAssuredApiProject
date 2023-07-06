@@ -1,4 +1,4 @@
-package com.udemy.java.interfacepolymorphism;
+package udemy.java.interfacepolymorphism;
 
 public interface Alarm {
 
