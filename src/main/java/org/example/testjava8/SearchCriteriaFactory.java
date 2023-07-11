@@ -1,4 +1,4 @@
-package testjava8;
+package org.example.testjava8;
 
 import org.openqa.selenium.WebElement;
 

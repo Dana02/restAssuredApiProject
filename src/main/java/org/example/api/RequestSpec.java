@@ -12,7 +12,7 @@ public class RequestSpec {
     }
 
     public String getToken(){
-        return "w16819959591kac4UAiVry63zJc29hVN2zaGDyC8";
+        return "w1689072228I5TPsF1DPm9oL7b6d2CWfwH0xpQ3F";
     }
 
     public RequestSpecification buildCommonSpec(String baseUrl) {

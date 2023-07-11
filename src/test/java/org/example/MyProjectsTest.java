@@ -68,5 +68,4 @@ public class MyProjectsTest extends BaseTest {
             myProjectsApi.deleteProjectById(projectId, trashFolderId);
         }
     }
-
 }

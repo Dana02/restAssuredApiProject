@@ -4,13 +4,13 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import junit.framework.Assert;
 import org.assertj.core.api.Assertions;
 import org.example.enums.Config;
 import org.example.enums.UrlPath;
 import org.example.pages.MyProjectsPage;
 import org.example.pages.objects.Project;
 import org.example.utils.PropertyReader;
-import org.testng.Assert;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
@@ -89,7 +89,7 @@ public class MyProjectsSteps extends BaseSteps {
     }
 
     @Step
-    public void assertNotification(Condition expectedCondition){
+    public void assertNotification(Condition expectedCondition) {
         myProjectsPage.getNotification().as("Notification on My project page has unexpected condition.").shouldBe(expectedCondition);
     }
 }

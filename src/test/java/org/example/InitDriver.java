@@ -20,6 +20,7 @@ public class InitDriver {
         Configuration.driverManagerEnabled = true;
         Configuration.assertionMode = STRICT;
         Configuration.textCheck = FULL_TEXT;
+
     }
 
     protected void tearDown() {
